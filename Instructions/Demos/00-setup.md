@@ -1,7 +1,7 @@
 ---
-lab:
-    title: 'Validate lab environment'
-    module: 'Module 0: Welcome'
+demo:
+    title: 'Set up your own environment'
+    module: 'Set up your own environment'
 ---
 
 # Validate lab environment
@@ -32,14 +32,10 @@ lab:
 1. Once the screen shows the linked Azure Subscription ID at the top, change the number of **Paid parallel jobs** for **MS Hosted CI/CD** from 0 to **1**. Then click the **SAVE** button at the bottom.
 1. In **Organization Settings**, go to section **Pipelines** and click **Settings**.
 1. Toggle the switch to **Off** for **Disable creation of classic build pipelines** and **Disable creation of classic release pipelines**
-
     > Note: The **Disable creation of classic release pipelines** switch sets to **On** hides classic release pipeline creation options such as the **Release** menu in the **Pipeline** section of DevOps projects.
-
 1. In **Organization Settings**, go to section **Security** and click **Policies**.
 1. Toggle the switch to **On** for **Allow public projects**
-
     > Note: Extensions used in some labs might require a public project to allow using the free version.
-
 1. **Wait at least 3 hours before using the CI/CD capabilities** so that the new settings are reflected in the backend. Otherwise, you will still see the message *"No hosted parallelism has been purchased or granted"*.
 
 ## Instructions to create the sample Azure DevOps Project (you only have to do this once)
@@ -78,11 +74,5 @@ In this task you will import the eShopOnWeb Git repository that will be used by 
     - **infra** folder contains Bicep&ARM infrastructure as code templates used in some lab scenarios.
     - **.github** folder container YAML GitHub workflow definitions.
     - **src** folder contains the .NET 8 website used on the lab scenarios.
-
-#### Task 3: Set main branch as default branch
-
-1. Go to **Repos>Branches**.
-1. Hover on the **main** branch then click the ellipsis on the right of the column.
-1. Click on **Set as default branch**.
 
 You have now completed the necessary prerequisite steps to continue with the different individual labs for this AZ-400 course.
